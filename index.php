@@ -7,7 +7,7 @@ require 'functions.php';
 // Those two files can be included only if INCLUDE_CHECK is defined
 
 
-session_name('tzLogin');
+session_name('Login');
 // Starting the session
 
 session_set_cookie_params(2*7*24*60*60);
@@ -15,7 +15,7 @@ session_set_cookie_params(2*7*24*60*60);
 
 session_start();
 
-if($_SESSION['id'] && !isset($_COOKIE['tzRemember']) && !$_SESSION['rememberMe'])
+if($_SESSION['id'] && !isset($_COOKIE['Remember']) && !$_SESSION['rememberMe'])
 {
 	// If you are logged in, but you don't have the tzRemember cookie (browser restart)
 	// and you have not checked the rememberMe checkbox:
@@ -67,7 +67,7 @@ if($_POST['submit']=='Login')
 			
 			// Store some data in the session
 			
-			setcookie('tzRemember',$_POST['rememberMe']);
+			setcookie('Remember',$_POST['rememberMe']);
 		}
 		else $err[]='Wrong username and/or password!';
 	}
