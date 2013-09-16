@@ -5,7 +5,7 @@ if(!defined('INCLUDE_CHECK')) die('You are not allowed to execute this file dire
 
 /* Database config */
 
-$db_host		= '23.88.99.47';
+$db_host		= '';
 $db_user		= 'anope';
 $db_pass		= '';
 $db_database	= 'anope'; 
