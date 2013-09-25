@@ -1,0 +1,72 @@
+body,
+h1,
+h2,
+h3,
+p,
+quote,
+small,
+form,
+input,
+ul,
+li,
+ol,
+label {
+    /* The reset rules */
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background: #eeeeee;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    width: 100%;
+}
+h1 {
+    font-family: "Trebuchet MS",Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+h2 {
+    color: #888888;
+    font-family: "Arial Narrow",Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-top: 4px;
+    padding-left: 2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.clear { clear: both }
+#main {
+    /* Centering it in the middle of the page */
+    margin: 60px auto;
+    width: 800px;
+}
+.container {
+    -khtml-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    /* Rounded corners */
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px;
+}
+#main p { padding-bottom: 8px }
+.err { color: red }
+.success { color: #00CC00 }
+a:hover { text-decoration: underline }
+a,
+a:visited {
+    color: #00BBFF;
+    outline: none;
+    text-decoration: none;
+}
+.tutorial-info {
+    padding: 10px;
+    text-align: center;
+}
